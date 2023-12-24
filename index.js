@@ -7,7 +7,11 @@ const cors = require("cors");
 // MIDDLE_WARES
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: [
+      "http://localhost:5173",
+      "https://todo-c2883.web.app",
+      "https://todo-c2883.firebaseapp.com",
+    ],
     credentials: true,
   })
 );
